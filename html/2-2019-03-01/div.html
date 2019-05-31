@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 25% 0 25%;
+        }
+        #her{
+            background-color: blue;
+            width: 30%;
+            margin: 10px;
+           
+        }
+        #his{
+            background-color: brown;
+            width:70%;
+            margin: 10px;
+            padding-right: 30px;
+            
+        }
+        .parent{
+            display: flex;
+            height: 4em;
+            background-color: grey;
+        }
+        #child1{
+            width:50%;
+            background-color: chartreuse;
+            margin: 10px;
+
+        }
+        #child2{
+            width: 50%;
+            background-color: orangered;
+            margin: 10px;
+
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="her"></div>
+        <div id="his"></div>
+    </div>
+    <div class="parent">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+    <div class="parent">
+        <div id="child2"></div>
+        <div id="child1"></div>
+    </div>
+    <div class="parent">
+        <div id="his"></div>
+        <div id="her"></div>
+    </div>
+    
+</body>
+</html>

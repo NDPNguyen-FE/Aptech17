@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+    <thead>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    
+  </tr>
+  </thead>
+  <tbody id="table">
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    
+  </tr>
+  </tbody>
+</table>
+
+
+
+    <script>
+        
+            var names =['nguyen', 18, 'hai', 19, 'thong', 20,'phap', 21]
+            var table = document.getElementById('table');
+            
+            for ( var i = 0; i < names.length /2; i++  ){
+            var tr =document.createElement('tr')
+            for (var j = i *2; j < (i*2) +2; j++ ){
+                var td = document.createElement('td');
+                var data = document.createTextNode(names[j]);
+                data.appendChild(td);
+                td.appendChild(tr);
+            }
+            }
+            table.appendChild(tr);
+
+        
+        
+    </script>
+    
+</body>
+</html>

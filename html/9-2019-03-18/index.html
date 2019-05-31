@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">hello world</h1>
+    <button type="button" onclick="doichu()">Click Me</button>
+    <button type="button" onclick="doichu('nguyen')">Nguyen</button>
+    <img src="pic_bulbon.gif" alt="" id="on">
+    <6button onclick="batDen()">Bật đèn</button>
+    <button onclick="tatDen()">Tắt đèn</button>
+    
+   
+
+    <script>
+        function tatDen(){
+            var imageElement = document.getElementById('on');
+            imageElement.src = 'pic_bulboff.gif';  
+        }
+        function batDen(){
+            var light = document.getElementById('on');
+            light.src = 'pic_bulbon.gif';
+        }
+    </script>
+
+    <script>
+       // function doichu(ten){
+            //document.getElementById("name").innerHTML='toi la nguyen';
+           // var loichao = 'Toi la ' + ten;
+           // document.getElementById('name').innerHTML= loichao;
+            
+        }
+            
+    </script>
+</body>
+</html>

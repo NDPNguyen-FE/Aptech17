@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+    }
+    </style>
+</head>
+<body>
+    <table id="">
+        <tr id="first-row">
+            <th>#</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tbody id="tableBody">
+        <tr >
+            <th>1</th>
+            <td>A</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+       
+
+    </table>
+    <button onclick="addPra()">click me</button>
+    <!-- #region -->
+    <script>
+        function addPra(){
+            var paragraph = document.createElement('tr');
+            var node = document.createTextNode('th');
+            paragraph.appendChild(node);
+
+            var element = document.getElementById('tableBody');
+            element.appendChild(paragraph); 
+        }
+        
+        
+    </script>
+    
+</body>
+</html>

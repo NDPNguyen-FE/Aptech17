@@ -1,0 +1,24 @@
+body{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(159, 128, 187);
+    font-family: sans-serif;
+}
+
+
+
+.form{
+    text-align: center;
+    width: 200px;
+    background-color:#424242;
+    
+.form input[type = "username"].form input[type = "password"]{
+    background: none;
+    display: none;
+    margin: 20px auto;
+
+    
+}
